@@ -1,26 +1,202 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------------------------------------------------------ */
+/*  ARCO Trading & Marketing — brand theme                             */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* === ARCO Brand System === */
+  /* darks — deep forest greens (the dark base) */
+  --color-forest: #0d2b1b; /* darkest — hero / dark bands */
+  --color-forest-800: #123724;
+  --color-forest-700: #17452d;
+  /* greens */
+  --color-arco-green: #206040; /* corporate primary */
+  --color-arco-green-dark: #184a31;
+  --color-arco-green-bright: #2f8a5c;
+  /* reds */
+  --color-arco-red: #c8102e; /* main brand accent */
+  --color-arco-red-dark: #a30d26;
+  --color-arco-red-bright: #e8455e;
+  /* yellow — energy / CTA highlight */
+  --color-arco-yellow: #ffd700;
+  --color-arco-yellow-bright: #ffe14d;
+  /* warm neutrals */
+  --color-arco-cream: #faf7f2;
+  --color-cream-200: #efe8dc;
+  /* text */
+  --color-crema: #f6f4ee; /* light text on dark */
+  --color-crema-dim: #b7c6bb; /* dimmed light text (green-tinted) */
+  --color-arco-ink: #1a2b21; /* dark text on light */
+  --color-ink-dim: #4a5c50;
+
+  --font-heading: var(--font-montserrat);
+  --font-display: var(--font-montserrat);
+  --font-sans: var(--font-inter);
+
+  --shadow-red-glow: 0 0 0 1px rgba(200, 16, 46, 0.35),
+    0 18px 40px -16px rgba(200, 16, 46, 0.4);
+  --shadow-gold-glow: 0 0 0 1px rgba(255, 215, 0, 0.45),
+    0 18px 40px -14px rgba(255, 215, 0, 0.35);
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
   }
 }
 
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                               */
+/* ------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  background-color: var(--color-arco-cream);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-arco-cream);
+  color: var(--color-arco-ink);
+  font-family: var(--font-sans), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background: var(--color-arco-red);
+  color: var(--color-arco-cream);
+}
+
+/* Brand engraved plate — red gradient signature surface */
+.brand-plate {
+  position: relative;
+  background-image: linear-gradient(
+    135deg,
+    #e8455e 0%,
+    #c8102e 40%,
+    #8f0b20 100%
+  );
+  box-shadow: inset 0 1px 1px rgba(255, 220, 220, 0.45),
+    inset 0 -2px 6px rgba(60, 4, 12, 0.6), 0 18px 40px -20px rgba(0, 0, 0, 0.7);
+}
+
+/* Engraved double rule — gold foil edge */
+.ornate-frame {
+  box-shadow: inset 0 0 0 1px rgba(255, 215, 0, 0.5),
+    inset 0 0 0 5px rgba(32, 96, 64, 0), inset 0 0 0 6px rgba(255, 215, 0, 0.25);
+}
+
+/* Reveal-on-scroll primitive */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cream ornament backdrop — cream with gold/green filigree dots */
+.damask {
+  background-color: var(--color-arco-cream);
+  background-image: radial-gradient(
+      circle at 50% 0,
+      rgba(255, 215, 0, 0.25) 0 2px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      rgba(200, 16, 46, 0.1) 0 2px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      rgba(200, 16, 46, 0.1) 0 2px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(255, 215, 0, 0.25) 0 2px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 25% 25%,
+      rgba(32, 96, 64, 0.1) 0 6px,
+      transparent 7px
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(32, 96, 64, 0.1) 0 6px,
+      transparent 7px
+    );
+  background-size: 46px 46px;
+}
+
+/* Kraft / natural paper — warm cream with fine horizontal grain */
+.kraft {
+  background-color: var(--color-cream-200);
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(26, 43, 33, 0.045) 0 1px,
+    transparent 1px 7px
+  );
+}
+
+/* Green section with a faint ornament weave */
+.green-ornament {
+  background-color: var(--color-arco-green-dark);
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      rgba(255, 215, 0, 0.1) 0 5px,
+      transparent 6px
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(255, 215, 0, 0.08) 0 5px,
+      transparent 6px
+    );
+  background-size: 40px 40px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Reduced motion: show everything, kill animation                   */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
