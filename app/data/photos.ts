@@ -14,4 +14,5 @@ export const photos = {
   freshProduce: u("1607013251379-e6eecfffe234"), // fresh groceries
   cannedGoods: u("1587049633312-d628ae50a8ae"), // stocked shelves
   teamMeeting: u("1509440159596-0249088772ff"), // trade / handshake
+  nutella: "/nutella.jpg", // Nutella jar local asset
 };
