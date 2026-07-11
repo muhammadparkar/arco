@@ -19,10 +19,10 @@ export const company = {
 export type NavLink = { label: string; href: string };
 
 export const navLinks: NavLink[] = [
-  { label: "Range", href: "/#range" },
-  { label: "Brands", href: "/#brands" },
-  { label: "Markets", href: "/#markets" },
-  { label: "Process", href: "/#process" },
+  { label: "Range", href: "/products" },
+  { label: "Brands", href: "/brands" },
+  { label: "Markets", href: "/markets" },
+  { label: "Process", href: "/process" },
 ];
 
 export type Pillar = {
@@ -230,21 +230,33 @@ export const steps = [
     n: "01",
     title: "Source",
     copy: "Partnerships with global and regional manufacturers, ranges selected for the Qatari market.",
+    detail:
+      "We work directly with 40+ manufacturers across Europe, the Americas, Asia and the Gulf — no middlemen, no markup layers. Every new line is screened against Qatari food-safety and halal requirements before it enters the range.",
+    photo: "containerPort",
   },
   {
     n: "02",
     title: "Import",
     copy: "Consolidated shipping, customs clearance and Qatari food-safety certification handled end to end.",
+    detail:
+      "Ocean and air freight is consolidated into full or part containers, cleared through Hamad Port and Doha customs by our own documentation team, and certified against Qatar's import regulations before it ever reaches the warehouse floor.",
+    photo: "cannedGoods",
   },
   {
     n: "03",
     title: "Warehouse",
     copy: "Ambient and chilled storage in Doha with live stock counts and FEFO rotation.",
+    detail:
+      "Temperature-mapped ambient and chilled bays keep every SKU within spec, from 5°C dairy to shelf-stable pantry goods. Stock is rotated FEFO (first-expiry, first-out) and counted live, so retailers never inherit our shrinkage.",
+    photo: "warehouse",
   },
   {
     n: "04",
     title: "Deliver",
     copy: "Next-day delivery across Doha and scheduled routes to every municipality in Qatar.",
+    detail:
+      "Ambient and refrigerated fleets run next-day across greater Doha and scheduled weekly routes to every municipality in Qatar — with temperature logging on every chilled drop, so what leaves our dock arrives exactly as it left.",
+    photo: "groceryAisle",
   },
 ];
 

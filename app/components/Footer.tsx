@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./Logo";
+import Brand from "./Brand";
 import { company, navLinks } from "../data/site";
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           {/* brand */}
           <div>
-            <Logo className="h-12 w-auto" onDark />
+            <Brand height={46} />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-crema-dim">
               {company.tagline}
             </p>

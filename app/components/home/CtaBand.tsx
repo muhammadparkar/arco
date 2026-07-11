@@ -31,7 +31,7 @@ export default function CtaBand() {
               Open a trade account
             </Link>
             <Link
-              href="/#range"
+              href="/products"
               className="inline-flex h-12 items-center justify-center rounded-lg border border-white/40 px-7 font-display text-sm font-bold uppercase tracking-wide text-white transition-colors hover:border-white hover:bg-white/5"
             >
               Browse the range

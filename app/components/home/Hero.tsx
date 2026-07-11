@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../Logo";
 import ProductVisual from "../ProductVisual";
 import { getProduct } from "../../data/products";
 import { company, featured } from "../../data/site";
@@ -33,11 +32,6 @@ export default function Hero() {
       <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-12 px-5 pb-20 pt-28 sm:px-8 lg:grid-cols-[1.05fr_0.95fr]">
         {/* left — editorial copy */}
         <div>
-          <Logo
-            className="mb-8 h-16 w-auto drop-shadow-[0_4px_18px_rgba(0,0,0,0.6)] sm:h-20"
-            onDark
-          />
-
           <div className="mb-4 flex items-center gap-3">
             <span className="h-px w-10 bg-arco-yellow/70" />
             <span className="font-display text-xs uppercase tracking-[0.34em] text-arco-yellow">
@@ -66,7 +60,7 @@ export default function Hero() {
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/#range"
+              href="/products"
               className="inline-flex h-12 items-center justify-center rounded-lg bg-arco-yellow px-7 font-display text-sm font-bold uppercase tracking-wide text-forest transition-colors hover:bg-arco-yellow-bright"
             >
               Browse the range

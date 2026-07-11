@@ -3,13 +3,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "./Logo";
+import Brand from "./Brand";
 import { navLinks } from "../data/site";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState<string>("");
   const pathname = usePathname();
   const onHome = pathname === "/";
 
@@ -20,27 +19,6 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  // Scroll-spy: highlight the section currently in view (home only).
-  useEffect(() => {
-    if (!onHome) return;
-    const ids = navLinks.map((l) => l.href.split("#")[1]).filter(Boolean);
-    const sections = ids
-      .map((id) => document.getElementById(id))
-      .filter((el): el is HTMLElement => Boolean(el));
-    if (!sections.length) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive(entry.target.id);
-        });
-      },
-      { rootMargin: "-45% 0px -50% 0px" },
-    );
-    sections.forEach((s) => observer.observe(s));
-    return () => observer.disconnect();
-  }, [onHome]);
 
   // Solid frosted bar off-home (dark hero only exists on the landing page).
   const frosted = scrolled || !onHome;
@@ -60,26 +38,29 @@ export default function Navbar() {
           aria-label="ARCO Trading & Marketing — home"
           onClick={() => setOpen(false)}
         >
-          <Logo className="h-11 w-auto" onDark />
+          <Brand height={34} />
         </Link>
 
         {/* desktop links */}
         <div className="hidden items-center gap-1 md:flex">
-          {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`rounded-lg px-3.5 py-2 font-display text-sm font-medium uppercase tracking-wide transition-colors ${
-                active === l.href.split("#")[1]
-                  ? "text-arco-yellow"
-                  : "text-crema-dim hover:text-crema"
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
+          {navLinks.map((l) => {
+            const isActive = pathname === l.href;
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`rounded-lg px-3.5 py-2 font-display text-sm font-medium uppercase tracking-wide transition-colors ${
+                  isActive
+                    ? "text-arco-yellow"
+                    : "text-crema-dim hover:text-crema"
+                }`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
           <Link
-            href="/#quote"
+            href="/contact"
             className="ml-2 inline-flex h-11 items-center rounded-lg bg-arco-yellow px-5 font-display text-sm font-bold uppercase tracking-wide text-forest transition-colors hover:bg-arco-yellow-bright"
           >
             Request Quote
@@ -118,7 +99,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            href="/#quote"
+            href="/contact"
             onClick={() => setOpen(false)}
             className="mt-1 block rounded-lg bg-arco-yellow px-4 py-3 text-center font-display text-base font-bold uppercase tracking-wide text-forest"
           >

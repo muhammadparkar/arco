@@ -32,6 +32,7 @@
   --font-heading: var(--font-montserrat);
   --font-display: var(--font-montserrat);
   --font-sans: var(--font-inter);
+  --font-wordmark: var(--font-bodoni);
 
   --shadow-red-glow: 0 0 0 1px rgba(200, 16, 46, 0.35),
     0 18px 40px -16px rgba(200, 16, 46, 0.4);

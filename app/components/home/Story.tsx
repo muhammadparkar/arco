@@ -24,7 +24,7 @@ export default function Story() {
               <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/20 to-transparent" />
               <Logo
                 className="relative h-20 w-auto drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)] sm:h-24"
-                onDark
+                color="#ffffff"
               />
             </div>
           </div>
