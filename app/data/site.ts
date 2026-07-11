@@ -19,7 +19,7 @@ export const company = {
 export type NavLink = { label: string; href: string };
 
 export const navLinks: NavLink[] = [
-  { label: "Range", href: "/products" },
+  { label: "Products", href: "/products" },
   { label: "Brands", href: "/brands" },
   { label: "Markets", href: "/markets" },
   { label: "Process", href: "/process" },
