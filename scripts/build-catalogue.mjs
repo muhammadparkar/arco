@@ -1,0 +1,165 @@
+// Generates app/data/products.ts from data/catalogue.csv.
+// Run: node scripts/build-catalogue.mjs   (or: npm run catalogue:build)
+//
+// The CSV is the source of truth. Edit it, re-run this, commit the result.
+// ponytail: CSV is the "database" for a static marketing site — no runtime, no CMS.
+
+import { readFileSync, writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+
+const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const csvPath = join(root, "data", "catalogue.csv");
+const outPath = join(root, "app", "data", "products.ts");
+
+// Canonical category order — drives the filter UI. Every row must map to one.
+const categories = [
+  "Sugar & Essentials",
+  "Oils & Ghee",
+  "Dairy & Chilled",
+  "Water & Beverages",
+  "Spreads & Condiments",
+  "Breakfast & Biscuits",
+  "Snacks & Confectionery",
+  "Tea & Coffee",
+  "Spices & Nuts",
+  "Disposables & Non-Food",
+];
+
+// Short blurbs for the marquee brands surfaced on /brands. Others render bare.
+const brandBlurbs = {
+  "Kellogg's": "Corn flakes and granola shipped weekly from the UK and Poland.",
+  Baladna: "Qatar's own dairy — fresh milk, laban, cheeses on a daily chilled loop.",
+  Puck: "Whipping and cooking creams for kitchens and cafés.",
+  Lurpak: "Danish butter, the pastry-section standard.",
+  Philadelphia: "Cream cheese in retail and 1.65kg food-service formats.",
+  Nutella: "Hazelnut spread from 750g jars to 3kg food-service tubs.",
+  "Lotus Biscoff": "Biscuits and spread from Belgium.",
+  "Red Bull": "Full energy-drink range including editions.",
+  "San Pellegrino": "Italian sparkling water in glass, by the case.",
+  Evian: "French natural mineral water.",
+  Kinza: "Cola and flavours from Saudi Arabia, 30-can cartons.",
+  KDD: "Kuwaiti creams and ice-cream cones.",
+  "American Garden": "US mayonnaise, peanut butter and pickles in HoReCa sizes.",
+  Tabasco: "Pepper sauces in 72-bottle food-service cartons.",
+  Oreo: "The world's favourite cookie.",
+  Kinder: "Bueno, Schoko-Bons and chocolate bars.",
+  Twinings: "Loose-leaf tins — English Breakfast, Earl Grey, Gunpowder.",
+  Nescafe: "Classic, Red Mug and Dolce Gusto capsules.",
+  Amul: "Indian ghee and butter, The Taste of India.",
+  Alpro: "Barista oat, almond, soya and coconut for coffee bars.",
+};
+
+// Minimal CSV reader: split on newlines, then commas. A handful of quoted
+// cells (embedded commas) are handled; the catalogue avoids them otherwise.
+function parseCsv(text) {
+  const lines = text.trim().split(/\r?\n/);
+  const headers = splitRow(lines[0]);
+  return lines.slice(1).map((line) => {
+    const cells = splitRow(line);
+    return Object.fromEntries(headers.map((h, i) => [h, (cells[i] ?? "").trim()]));
+  });
+}
+
+function splitRow(line) {
+  const out = [];
+  let cur = "";
+  let quoted = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (c === '"') quoted = !quoted;
+    else if (c === "," && !quoted) {
+      out.push(cur);
+      cur = "";
+    } else cur += c;
+  }
+  out.push(cur);
+  return out;
+}
+
+const slugify = (s) =>
+  s
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+const rows = parseCsv(readFileSync(csvPath, "utf8"));
+
+const seen = new Set();
+const products = rows.map((r) => {
+  let slug = slugify(r.name);
+  let n = 2;
+  while (seen.has(slug)) slug = `${slugify(r.name)}-${n++}`;
+  seen.add(slug);
+  const tags = r.tags ? r.tags.split(";").map((t) => t.trim()).filter(Boolean) : [];
+  const description = `${r.name} — ${r.origin}. Supplied ${r.packing} per ${r.unit}. Trade pricing and availability on request.`;
+  return {
+    slug,
+    name: r.name,
+    brand: r.brand || "ARCO",
+    category: r.category,
+    subcategory: r.subcategory || "",
+    origin: r.origin,
+    packing: r.packing,
+    unit: r.unit,
+    description,
+    tags,
+  };
+});
+
+// --- self-checks (fail loud rather than ship a broken catalogue) ---
+const bad = products.filter((p) => !categories.includes(p.category));
+if (bad.length) throw new Error(`Unknown category on: ${bad.map((p) => p.name).join(", ")}`);
+if (new Set(products.map((p) => p.slug)).size !== products.length)
+  throw new Error("Duplicate slug survived dedupe");
+if (products.length < 200) throw new Error(`Only ${products.length} products — expected 200+`);
+
+// Distinct brands, in first-seen order, with blurbs where known.
+const brandNames = [...new Set(products.map((p) => p.brand))];
+const brands = brandNames.map((name) => ({
+  name,
+  blurb: brandBlurbs[name] ?? "",
+}));
+
+// Subcategories grouped under their category, for the second filter tier.
+const subcategories = {};
+for (const c of categories) {
+  subcategories[c] = [
+    ...new Set(products.filter((p) => p.category === c && p.subcategory).map((p) => p.subcategory)),
+  ];
+}
+
+const banner =
+  "// GENERATED by scripts/build-catalogue.mjs — DO NOT EDIT BY HAND.\n" +
+  "// Source of truth: data/catalogue.csv. Edit the CSV, then run:\n" +
+  "//   npm run catalogue:build\n";
+
+const ts =
+  banner +
+  "\n" +
+  "export type Product = {\n" +
+  "  slug: string;\n" +
+  "  name: string;\n" +
+  "  brand: string;\n" +
+  "  category: string;\n" +
+  "  subcategory: string;\n" +
+  "  origin: string;\n" +
+  "  packing: string;\n" +
+  "  unit: string;\n" +
+  "  description: string;\n" +
+  "  tags: string[];\n" +
+  "  image?: string; // /products/<slug>.jpg when real photography exists\n" +
+  "};\n\n" +
+  `export const categories = ${JSON.stringify(categories, null, 2)} as const;\n\n` +
+  `export const subcategories: Record<string, string[]> = ${JSON.stringify(subcategories, null, 2)};\n\n` +
+  `export const brands = ${JSON.stringify(brands, null, 2)};\n\n` +
+  `export const products: Product[] = ${JSON.stringify(products, null, 2)};\n\n` +
+  "export const getProduct = (slug: string) =>\n" +
+  "  products.find((p) => p.slug === slug);\n";
+
+writeFileSync(outPath, ts);
+
+console.log(
+  `${products.length} products, ${categories.length} categories, ${brands.length} brands → app/data/products.ts`
+);

@@ -39,7 +39,7 @@
   --shadow-gold-glow: 0 0 0 1px rgba(255, 215, 0, 0.45),
     0 18px 40px -14px rgba(255, 215, 0, 0.35);
 
-  --animate-marquee: marquee 38s linear infinite;
+  --animate-marquee: marquee 70s linear infinite;
   --animate-float: float 7s ease-in-out infinite;
 }
 

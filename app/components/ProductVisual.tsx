@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Product } from "../data/products";
 
 // ponytail: no product photography yet — branded gradient tiles + category icon stand in.
@@ -38,12 +39,32 @@ export const categoryStyles: Record<string, { bg: string; icon: React.ReactNode 
     bg: "from-red-600 to-orange-800",
     icon: <path d="M12 3c3 4 5 7 5 10a5 5 0 01-10 0c0-3 2-6 5-10zm0 10v6" />,
   },
+  "Disposables & Non-Food": {
+    bg: "from-slate-500 to-slate-700",
+    icon: <path d="M7 4h10l-1 16H8L7 4zm2 2l.7 12h4.6L15 6H9z" />,
+  },
 };
 
 const fallback = {
   bg: "from-arco-green to-forest",
   icon: <path d="M4 6h16v12H4z" />,
 };
+
+// Small hash of the brand → a deterministic 0–5 rotation, so tiles in the
+// same category don't all look identical. ponytail: cosmetic, no lib needed.
+const brandTint = (brand: string) => {
+  let h = 0;
+  for (let i = 0; i < brand.length; i++) h = (h * 31 + brand.charCodeAt(i)) | 0;
+  return Math.abs(h) % 6;
+};
+const tints = [
+  "",
+  "saturate-125",
+  "saturate-75",
+  "brightness-110",
+  "brightness-90",
+  "hue-rotate-15",
+];
 
 export default function ProductVisual({
   product,
@@ -52,10 +73,25 @@ export default function ProductVisual({
   product: Product;
   className?: string;
 }) {
+  // Real photo when supplied; branded gradient tile otherwise.
+  if (product.image) {
+    return (
+      <div className={`relative overflow-hidden bg-white ${className}`}>
+        <Image
+          src={product.image}
+          alt={`${product.brand} ${product.name}`}
+          fill
+          sizes="(max-width: 768px) 50vw, 300px"
+          className="object-contain transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+    );
+  }
+
   const style = categoryStyles[product.category] ?? fallback;
   return (
     <div
-      className={`relative flex items-center justify-center overflow-hidden bg-gradient-to-br ${style.bg} ${className}`}
+      className={`relative flex items-center justify-center overflow-hidden bg-gradient-to-br ${style.bg} ${tints[brandTint(product.brand)]} ${className}`}
       role="img"
       aria-label={`${product.brand} ${product.name}`}
     >

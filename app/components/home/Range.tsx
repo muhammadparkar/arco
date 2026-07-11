@@ -7,12 +7,15 @@ import ProductVisual from "../ProductVisual";
 import { categories, products } from "../../data/products";
 
 const FILTERS = ["All", ...categories] as const;
+const PREVIEW = 9; // home page teases a slice — full catalogue lives on /products
 
 export default function Range() {
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>("All");
-  const list = products.filter(
+  const matched = products.filter(
     (p) => filter === "All" || p.category === filter,
   );
+  const list = matched.slice(0, PREVIEW);
+  const hasMore = matched.length > PREVIEW;
 
   return (
     <section id="range" className="scroll-mt-24 bg-arco-cream py-20 text-arco-ink sm:py-28">
@@ -108,6 +111,25 @@ export default function Range() {
             </Reveal>
           ))}
         </div>
+
+        {hasMore && (
+          <div className="mt-10 text-center">
+            <Link
+              href={
+                filter === "All"
+                  ? "/products"
+                  : `/products?category=${encodeURIComponent(filter)}`
+              }
+              className="inline-flex h-12 items-center gap-2 rounded-lg border border-arco-ink/20 px-6 font-display text-sm font-bold uppercase tracking-wide text-arco-ink transition-colors hover:border-arco-red hover:bg-arco-red hover:text-arco-cream"
+            >
+              View all {matched.length}
+              {filter === "All" ? " products" : ` in ${filter}`}
+              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                <path d="M13 6l6 6-6 6M5 12h14" />
+              </svg>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

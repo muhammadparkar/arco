@@ -1,0 +1,215 @@
+code,name,origin,packing,unit,category,subcategory,brand,tags
+01,Panko Bread Crumbs 10kg,Malaysia,10 BAG,BAG,Sugar & Essentials,Baking & Coating,ARCO Food Service,horeca
+02,Tempura Flour 1kg,Malaysia,1 KG,PKT,Sugar & Essentials,Baking & Coating,ARCO Food Service,horeca
+03,Panko Bread Crumbs 1kg,Malaysia,1 KG,PKT,Sugar & Essentials,Baking & Coating,ARCO Food Service,
+04,White Sugar Stick 5g,UAE,1000 PCS,BOX,Sugar & Essentials,Sugar & Sweeteners,ARCO Food Service,horeca
+05,Brown Sugar Stick 5g,UAE,1000 PCS,BOX,Sugar & Essentials,Sugar & Sweeteners,ARCO Food Service,horeca
+06,White Sugar Sachet 5g,UAE,1000 PCS,BTL,Sugar & Essentials,Sugar & Sweeteners,ARCO Food Service,horeca
+07,Brown Sugar Sachet 5g,UAE,1000 PCS,BTL,Sugar & Essentials,Sugar & Sweeteners,ARCO Food Service,horeca
+08,Sweet'N Low 100pcs,USA,12x100PCS,BOX,Sugar & Essentials,Sugar & Sweeteners,Sweet'N Low,
+09,Sugar 2kg,India,1KGx10PCS,BOX,Sugar & Essentials,Sugar & Sweeteners,Al Hayat,
+10,Sugar 50kg,India,50KG,BOX,Sugar & Essentials,Sugar & Sweeteners,Renuka,bulk
+11,SIS Sugar White 1kg,Australia,1KG,PKT,Sugar & Essentials,Sugar & Sweeteners,SIS,retail
+12,SIS Sugar Brown 1kg,Australia,1KG,PKT,Sugar & Essentials,Sugar & Sweeteners,SIS,retail
+13,Shortening Clear Oil,Qatar,18LTR,CTN,Oils & Ghee,Cooking Oils,ARCO Food Service,horeca
+14,Sunflower Oil,Qatar,5LTR*4,CTN,Oils & Ghee,Cooking Oils,ARCO Food Service,local
+15,Corn Oil,Qatar,5LTR*4,CTN,Oils & Ghee,Cooking Oils,ARCO Food Service,local
+16,Vegetable Oil,Malaysia,18LTR,TIN,Oils & Ghee,Cooking Oils,Sabrina Gold,bulk
+17,Canada Maple Syrup,Canada,6 x 1 LITTER,BTL,Breakfast & Biscuits,Syrups & Honey,Maple Joe,
+18,Canada Organic Maple Syrup,Canada,6 x 1 LITTER,BTL,Breakfast & Biscuits,Syrups & Honey,Maple Joe,
+19,Organic Green Matcha Tea 100g,LiveSmart,100GM,PKT,Tea & Coffee,Tea,LiveSmart,
+20,Organic Blue Matcha Tea 100g,LiveSmart,100GM,PKT,Tea & Coffee,Tea,LiveSmart,
+21,Organic Mango Matcha Tea 100g,LiveSmart,100GM,PKT,Tea & Coffee,Tea,LiveSmart,
+22,Udon Wheat Noodles 300g,Japan,300GM,PKT,Sugar & Essentials,Grains & Noodles,Kekeshi,
+23,Esoro Red Quinoa 1kg,Peru,1000GM,PKT,Sugar & Essentials,Grains & Noodles,Esoro,
+24,Esoro White Quinoa 1kg,Peru,1000GM,PKT,Sugar & Essentials,Grains & Noodles,Esoro,
+25,Nutella Hazelnut Spread 750g,Germany,750GM*12,PCS,Spreads & Condiments,Sweet Spreads,Nutella,bestseller
+26,Nutella Hazelnut Spread 3kg,Germany,3000GM*2,PCS,Spreads & Condiments,Sweet Spreads,Nutella,horeca
+27,Lotus Spread 400g,Belgium,400GM*12,PCS,Spreads & Condiments,Sweet Spreads,Lotus Biscoff,
+28,Philadelphia Cream Cheese Spread 500g,Switzerland,500GM*04,PCS,Dairy & Chilled,Cheese,Philadelphia,chilled
+29,Philadelphia Cream Cheese Spread 1.65kg,Switzerland,1.65KG*04,PCS,Dairy & Chilled,Cheese,Philadelphia,horeca;chilled
+30,Baladna Spreadable Cream Cheese 500g,Qatar,500GM*02,PCS,Dairy & Chilled,Cheese,Baladna,local;chilled
+31,CJ Bibigo Soy Bean Tofu Firm 350g,Japan,350GMx5PCS,PCS,Dairy & Chilled,Plant-Based,CJ Bibigo,chilled
+32,Puck Organic Cream Cheese Spread Jar 500g,Germany,500GM*02,PCS,Dairy & Chilled,Cheese,Puck,chilled
+33,Puck Whipped Cream Spray 250g,Belgium,250GM*12,PCS,Dairy & Chilled,Cream,Puck,chilled
+34,Puck Whipping Cream 1L,Belgium,1LTR*12,PCS,Dairy & Chilled,Cream,Puck,horeca;chilled
+35,Baladna Fresh Milk 2L,Qatar,2LTR*9,PCS,Dairy & Chilled,Milk,Baladna,local;chilled;bestseller
+36,Baladna Fresh Milk 1L,Qatar,1LTR*9,PCS,Dairy & Chilled,Milk,Baladna,local;chilled
+37,Baladna Long Life Milk 1L,Qatar,1LTR*12,CTN,Dairy & Chilled,Milk,Baladna,local
+38,Awafi Long Life Milk 1L,Qatar,1LTR*12,CTN,Dairy & Chilled,Milk,Awafi,local
+39,Baladna LL Lactose Milk 1L,Qatar,1LTR*12,CTN,Dairy & Chilled,Milk,Baladna,local
+40,Baladna Skimmed LL Milk 1L,Qatar,1LTR*12,CTN,Dairy & Chilled,Milk,Baladna,local
+41,Baladna Long Life Cooking Cream 1L,Qatar,1LTR*12,CTN,Dairy & Chilled,Cream,Baladna,local
+42,Baladna Long Life Whipping Cream 1L,Qatar,1LTR*12,CTN,Dairy & Chilled,Cream,Baladna,local
+43,Baladna Fresh Yoghurt FF 2kg,Qatar,2LTR,PCS,Dairy & Chilled,Yoghurt & Labneh,Baladna,local;chilled
+44,Baladna Fresh Turkish Labneh 2kg,Qatar,2KG,PCS,Dairy & Chilled,Yoghurt & Labneh,Baladna,local;chilled
+45,Baladna Yoghurt Greek Style Plain 150g,Qatar,150GM*4PCS,PCS,Dairy & Chilled,Yoghurt & Labneh,Baladna,local;chilled
+46,Baladna Shredded Mozzarella Cheese 450g,Qatar,450GM*12,PCS,Dairy & Chilled,Cheese,Baladna,local;chilled
+47,Baladna Halloumi Cheese Full Fat 200g,Qatar,200GM,PCS,Dairy & Chilled,Cheese,Baladna,local;chilled
+48,Baladna FF Feta Cheese 500g,Qatar,500GM,PCS,Dairy & Chilled,Cheese,Baladna,local;chilled
+49,Baladna Fresh Laban FF 2L,Qatar,2LTR,PCS,Dairy & Chilled,Laban,Baladna,local;chilled;bestseller
+50,San Pellegrino Water 500ml,Italy,500MLx24,CASE,Water & Beverages,Water,San Pellegrino,horeca
+51,San Pellegrino Water 1000ml,Italy,1000MLx06,CASE,Water & Beverages,Water,San Pellegrino,horeca
+52,Natural Artesian Water Fiji 330ml,New Zealand,6(330MLx6),CASE,Water & Beverages,Water,Fiji,
+53,Natural Artesian Water Fiji 500ml,New Zealand,4(500MLx6),CASE,Water & Beverages,Water,Fiji,
+54,Mineral Water Natural - Highland 500ml,England,500MLx24,CASE,Water & Beverages,Water,Highland,
+55,Mineral Water Carbonated - Highland 330ml,England,330MLx24,CASE,Water & Beverages,Water,Highland,
+56,Rayyan Natural Water 330ml,Qatar,330ML*24PCS,CASE,Water & Beverages,Water,Rayyan,local;bulk
+57,Evian Natural Mineral Water 330ml,France,330ML*24PCS,CASE,Water & Beverages,Water,Evian,
+58,Perrier Water 330ml,France,330MLx24PCS,CASE,Water & Beverages,Water,Perrier,
+59,Red Bull Regular Energy Drink 250ml,Switzerland,250ML*24,CTN,Water & Beverages,Energy Drinks,Red Bull,bestseller
+60,Red Bull Sugar Free Energy Drink 250ml,Switzerland,250ML*24,CTN,Water & Beverages,Energy Drinks,Red Bull,
+61,Red Bull Coconut Energy Drink 250ml,Switzerland,250ML*24,CTN,Water & Beverages,Energy Drinks,Red Bull,
+62,Red Bull Blueberry Energy Drink 250ml,Switzerland,250ML*24,CTN,Water & Beverages,Energy Drinks,Red Bull,
+63,Red Bull Watermelon Energy Drink 250ml,Switzerland,250ML*24,CTN,Water & Beverages,Energy Drinks,Red Bull,
+64,Kinza Cola Can 250ml,Saudi Arabia,250ML*30,CTN,Water & Beverages,Soft Drinks,Kinza,
+65,Kinza Diet Cola Can 250ml,Saudi Arabia,250ML*30,CTN,Water & Beverages,Soft Drinks,Kinza,
+66,Kinza Lemon Can 250ml,Saudi Arabia,250ML*30,CTN,Water & Beverages,Soft Drinks,Kinza,
+67,Kinza Diet Lemon Can 250ml,Saudi Arabia,250ML*30,CTN,Water & Beverages,Soft Drinks,Kinza,
+68,Kinza Orange Can 250ml,Saudi Arabia,250ML*30,CTN,Water & Beverages,Soft Drinks,Kinza,
+69,Double Up Cola Carbonated Drink 200ml,Qatar,200ML*24,CTN,Water & Beverages,Soft Drinks,Double Up,local
+70,Double Up Lemon Carbonated Drink 200ml,Qatar,200ML*24,CTN,Water & Beverages,Soft Drinks,Double Up,local
+71,Anchor Milk Powder 2.25kg,New Zealand,2.25KG*6PCS,PCS,Dairy & Chilled,Milk Powder,Anchor,
+72,Nido Milk Powder,Netherlands,2.25KG*6PCS,PCS,Dairy & Chilled,Milk Powder,Nido,
+73,Milk Powder 25kg,UAE,25KG BAG,BAG,Dairy & Chilled,Milk Powder,ARCO Food Service,bulk
+74,Ovaltine Drink Powder 600g,Jamaica,600GM*12PCS,BOX,Tea & Coffee,Malt & Cocoa,Ovaltine,
+75,Luna Evaporated Original Milk,Saudi Arabia,170GM*96PCS,CTN,Dairy & Chilled,Evaporated & Condensed,Luna,
+76,Rainbow Evaporated Milk,Netherlands,410ML*48PCS,CTN,Dairy & Chilled,Evaporated & Condensed,Rainbow,
+77,Bonny Evaporated Milk 410ml,Germany,410ML*48PCS,CTN,Dairy & Chilled,Evaporated & Condensed,Bonny,
+78,Nestle Sweetened Condensed Milk 370g,Spain,370GM*48PCS,CTN,Dairy & Chilled,Evaporated & Condensed,Nestle,
+79,KDD Chocolate Cream 1L,Kuwait,1LTR*12PCS,BOX,Dairy & Chilled,Cream,KDD,
+80,KDD Vanilla Cream 1L,Kuwait,1LTR*12PCS,BOX,Dairy & Chilled,Cream,KDD,
+81,KDD Ice Cream Corn 1000pcs,Kuwait,1000PCS*1BOX,BOX,Snacks & Confectionery,Ice Cream & Cones,KDD,horeca
+82,KDD Ice Cream Corn 25pcs Red,Kuwait,25PCS*1BOX,BOX,Snacks & Confectionery,Ice Cream & Cones,KDD,
+83,KDD Ice Cream Corn 25pcs Blue,Kuwait,25PCS*1BOX,BOX,Snacks & Confectionery,Ice Cream & Cones,KDD,
+84,Frank's RedHot Buffalo Wings Sauce 3.8L,USA,3.8L*4PCS,CTN,Spreads & Condiments,Sauces,Frank's RedHot,horeca
+85,Frank's RedHot Original Cayenne Pepper Sauce 3.8L,USA,3.8L*4PCS,CTN,Spreads & Condiments,Sauces,Frank's RedHot,horeca
+86,Tabasco Pepper Sauce 60ml,USA,60ML*72PCS,CTN,Spreads & Condiments,Sauces,Tabasco,horeca
+87,Tabasco Jalapeno Green Pepper Sauce 60ml,USA,60ML*72PCS,CTN,Spreads & Condiments,Sauces,Tabasco,horeca
+88,Ola Light Meat Tuna,Thailand,1.885x6,CTN,Spreads & Condiments,Canned Goods,Ola,
+89,La Preferida Cheddar Cheese,USA,3KGx6,CTN,Dairy & Chilled,Cheese,La Preferida,horeca
+90,Perfecta Cheddar Cheese,England,3KGx6,CTN,Dairy & Chilled,Cheese,Perfecta,horeca
+91,Chilli Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+92,Coriander Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+93,Turmeric Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+94,Cassia Indian Cinnamon Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+95,Garlic Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+96,Ginger Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+97,Kashmiri Chilli Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local;horeca
+98,White Pepper Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+99,Chaat Masala Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+100,Chicken Masala Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+101,Garam Masala Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+102,Madras Curry Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+103,Sambar Powder 1kg,Qatar,1KGx12,PKT,Spices & Nuts,Spices,ARCO Spices,local
+104,Cashew Nuts 1kg,India,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+105,Pecan Nuts 1kg,UAE,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+106,Almond Whole Nuts 1kg,USA,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+107,Almond Slice Nuts 1kg,USA,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+108,Almond Powder Nuts 1kg,USA,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+109,Pistachio Slice 1kg,UAE,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+110,Pistachio Whole 1kg,UAE,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+111,Pistachio Whole With Shell 1kg,UAE,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+112,Pistachio Powder 1kg,UAE,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+113,Walnut Nuts With Shell 1kg,USA,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+114,Walnut Nuts 1kg,USA,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+115,Dry Fig 1kg,Turkey,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+116,Hazelnut Nuts 1kg,UAE,1KGx1PKT,PKT,Spices & Nuts,Nuts,ARCO Nuts,
+117,Oman Chips Family Pack,Oman,Various sizes,PKT,Snacks & Confectionery,Chips & Crisps,Oman Chips,
+118,Master Kettle Cooked Salt Potato Chips 170g,Lebanon,Various sizes,PKT,Snacks & Confectionery,Chips & Crisps,Master,
+119,Master Kettle Cooked Salt & Vinegar Potato Chips 170g,Lebanon,Various sizes,PKT,Snacks & Confectionery,Chips & Crisps,Master,
+120,Batato's Classic Salted Chips 167g,Qatar,Various sizes,PKT,Snacks & Confectionery,Chips & Crisps,Batato's,local
+121,Doritos Chips Nacho Cheese 180g,KSA / USA / India,Various sizes,PKT,Snacks & Confectionery,Chips & Crisps,Doritos,
+122,Doritos Chips Sweet Chili Pepper 180g,KSA / USA / India,Various sizes,PKT,Snacks & Confectionery,Chips & Crisps,Doritos,
+123,Blossom Jasmine Rice 5kg,Vietnam,5KGx2BAG,BAG,Sugar & Essentials,Grains & Noodles,Blossom,bulk
+124,White Egg Large 30x12 Tray,Iran / India,30PCSx12TR,CRTN,Sugar & Essentials,Eggs,ARCO Food Service,
+125,Brown Egg Large 30x12 Tray,Iran / India,30PCSx12TR,CRTN,Sugar & Essentials,Eggs,ARCO Food Service,
+126,Fresh White Egg Large 30x12 Tray,Qatar,30PCSx12TR,CRTN,Sugar & Essentials,Eggs,ARCO Food Service,local
+127,Fresh Brown Egg Large 30x12 Tray,Qatar,30PCSx12TR,CRTN,Sugar & Essentials,Eggs,ARCO Food Service,local;horeca
+128,Amul Ghee Pure 1L,India,1LTRx12PCS,CRTN,Oils & Ghee,Ghee,Amul,bestseller
+129,Mazzarty Natural Butter Unsalted 400g,Qatar,400GM*12PCS,PCS,Dairy & Chilled,Butter,Mazzarty,local;chilled
+130,Anchor Butter Unsalted,New Zealand,Various sizes,CRTN,Dairy & Chilled,Butter,Anchor,chilled
+131,Lurpak Butter Unsalted 500g,Denmark,500GM*20PCS,CRTN,Dairy & Chilled,Butter,Lurpak,chilled
+132,Amul Unsalted Frozen Butter 500g,India,500GMx20PCS,CRTN,Dairy & Chilled,Butter,Amul,chilled
+133,RKG Classic Pure Cow Ghee 500g,India,500GMx20PCS,CRTN,Oils & Ghee,Ghee,RKG,
+134,Mantova EVOO Extra Virgin Olive Oil Spray Chili 250ml,Italy,250ML*1PCS,PCS,Oils & Ghee,Cooking Oils,Mantova,horeca
+135,Alpro Barista Almond 1L,Belgium,1LTRx08PCS,CRTN,Water & Beverages,Plant Milk,Alpro,horeca
+136,Alpro Barista Oats 1L,Belgium,1LTRx08PCS,CRTN,Water & Beverages,Plant Milk,Alpro,horeca
+137,Alpro Barista Coconut 1L,Belgium,1LTRx12PCS,CRTN,Water & Beverages,Plant Milk,Alpro,horeca
+138,Alpro Barista Soya Professional 1L,Belgium,1LTRx12PCS,CRTN,Water & Beverages,Plant Milk,Alpro,horeca
+139,Oatly Original Barista Edition Oats Drink 1L,Netherlands,1LTRx06PCS,CRTN,Water & Beverages,Plant Milk,Oatly,horeca
+140,Oatly No Sugars Oat Drink 1L,Netherlands,1LTRx06PCS,CRTN,Water & Beverages,Plant Milk,Oatly,horeca
+141,Oatly Organic Oat Drink 1L,Netherlands,1LTRx06PCS,CRTN,Water & Beverages,Plant Milk,Oatly,horeca
+142,RealLemon Lemon Juice 500ml,Belgium,500MLx12PCS,BOX,Spreads & Condiments,Sauces,RealLemon,
+143,Delicio Chili Garlic Sauce 150ml,Oman,150MLx12PCS,BOX,Spreads & Condiments,Sauces,Delicio,
+144,Kellogg's Corn Flakes 750g,United Kingdom,750GM*12PCS,BOX,Breakfast & Biscuits,Cereals,Kellogg's,bestseller
+145,Kellogg's Granola Classic Oats Cluster 600g,Poland,600GM*10PCS,BOX,Breakfast & Biscuits,Cereals,Kellogg's,
+146,Quaker White Oats 500g Pouch,United Kingdom,500GM*20PCS,PCH,Breakfast & Biscuits,Cereals,Quaker,
+147,Quaker White Oats 500g Tin,United Kingdom,500GM*20PCS,TIN,Breakfast & Biscuits,Cereals,Quaker,
+148,Bayara Cardamom Powder 125g,Oman,125GM*10PCS,BTL,Spices & Nuts,Spices,Bayara,
+149,Loacker Tortina Chocolate Wafer 126g,Italy,126GM*5PCS,PCS,Snacks & Confectionery,Biscuits & Wafers,Loacker,
+150,Oreo Original Biscuit,Bahrain,Value pack XXL,BOX,Snacks & Confectionery,Biscuits & Wafers,Oreo,bestseller
+151,Ritz Original Crackers 39.6g,USA,39.6GM*12PCS,BOX,Snacks & Confectionery,Biscuits & Wafers,Ritz,
+152,McVitie's Digestive Original 500g,United Kingdom,500GM*20PCS,BOX,Breakfast & Biscuits,Biscuits,McVitie's,
+153,McVitie's Digestive Light 500g,United Kingdom,500GM*20PCS,BOX,Breakfast & Biscuits,Biscuits,McVitie's,
+154,Lotus Biscoff Biscuits 250g,Belgium,250GM*10PCS,BOX,Snacks & Confectionery,Biscuits & Wafers,Lotus Biscoff,
+155,Nutella Ferrero Biscuits 166g,Germany,166GM*24PCS,PCS,Snacks & Confectionery,Biscuits & Wafers,Nutella,
+156,QFM Patent Flour All Purpose 1kg,Qatar,1KG*10PCS,OTR,Sugar & Essentials,Flour,QFM,local
+157,QFM Patent Flour All Purpose 5kg,Qatar,5KG*2PCS,OTR,Sugar & Essentials,Flour,QFM,local
+158,Foster Clark's Corn Flour 400g,United States,400GM*12PCS,BOX,Sugar & Essentials,Baking & Coating,Foster Clark's,
+159,Foster Clark's Baking Powder 450g,Malta,450GM*12PCS,BOX,Sugar & Essentials,Baking & Coating,Foster Clark's,
+160,Foster Clark's Vanilla Essence 28ml,Malta,28ML*72PCS,BOX,Sugar & Essentials,Baking & Coating,Foster Clark's,
+161,Kinder Schoko Bons Crispy T16 89g,Germany,89GM*22PCS,BOX,Snacks & Confectionery,Chocolate,Kinder,
+162,Kinder Chocolate Maxi Bar 21g,United Kingdom,21GM*36PCS,OTR,Snacks & Confectionery,Chocolate,Kinder,
+163,Kinder Bueno Wafer 43g,Italy,43GM*30PCS,OTR,Snacks & Confectionery,Chocolate,Kinder,
+164,Kinder Chocolate 100g,Germany,100GM*10PCS,OTR,Snacks & Confectionery,Chocolate,Kinder,
+165,Cadbury Flake Dipped Bar 32g,Egypt,32GM*12PCS,OTR,Snacks & Confectionery,Chocolate,Cadbury,
+166,Ferrero Rocher Praline Speciality 300g,Italy,300GM*1PCS,PCS,Snacks & Confectionery,Chocolate,Ferrero,
+167,Galaxy Milk Chocolate 80g,United Kingdom,80GM*15PCS,OTR,Snacks & Confectionery,Chocolate,Galaxy,
+168,Zaini Milk Chocolate Egg MotoGP 20g,Italy,20GM*3PCS,OTR,Snacks & Confectionery,Chocolate,Zaini,
+169,Nestle KitKat 4 Finger Chocolate 36.5g,United Kingdom,36.5GM*24PCS,BOX,Snacks & Confectionery,Chocolate,Nestle,
+170,Frozen Alphonso Mango Pulp 1kg,India,1KG*10PCS,PCS,Spreads & Condiments,Frozen Pulp,ARCO Food Service,
+171,Frozen Strawberry Pulp 1kg,China,1KG*1PCS,PCS,Spreads & Condiments,Frozen Pulp,ARCO Food Service,
+172,Lipton Tea Bags Yellow Label 100pcs Sachets 200g,UAE,200GM*12PCS,OTR,Tea & Coffee,Tea,Lipton,bestseller
+173,Hi Tea Black Tea Powder 900g,India / Sri Lanka,900GM*1PCS,PCS,Tea & Coffee,Tea,Hi Tea,
+174,Lipton Tea Bags Yellow Label 25pcs Sachets 50g,UAE,50GM*24PCS,OTR,Tea & Coffee,Tea,Lipton,
+175,Twinings English Breakfast Tea Tin 200g,United Kingdom,200GM*12PCS,PCS,Tea & Coffee,Tea,Twinings,
+176,Twinings Gunpowder Green Tea Tin 200g,China,200GM*12PCS,PCS,Tea & Coffee,Tea,Twinings,
+177,Twinings Goldline Earl Grey Tin 200g,China,200GM*12PCS,PCS,Tea & Coffee,Tea,Twinings,
+178,Lipton Green Tea Mint 100pcs,UAE,130GM*1PCS,OTR,Tea & Coffee,Tea,Lipton,
+179,Ahmed Lemon Tea 100pcs,USA,2GM*100PCS,OTR,Tea & Coffee,Tea,Ahmad,
+180,Lipton Green Tea Pure 25pcs,UAE,37.5GM*1PCS,OTR,Tea & Coffee,Tea,Lipton,
+181,Tetley Super Fruits Multi Vitamin Summer Berry,USA,2GM*20PCS,OTR,Tea & Coffee,Tea,Tetley,
+182,Al-Kbous Tea 100pcs x 2g,Oman,2GM*100PCS,BOX,Tea & Coffee,Tea,Al-Kbous,
+183,Al Attar Hibiscus Tea 25pcs,USA,5GM*25PCS,OTR,Tea & Coffee,Tea,Al Attar,
+184,Figaro Olives Pitted Green 920g,Spain,920GM*5PCS,PCS,Spreads & Condiments,Pickles & Olives,Figaro,
+185,American Garden Hamburger Dill Chips 907g,USA,907GM*12PCS,BOX,Spreads & Condiments,Pickles & Olives,American Garden,horeca
+186,American Garden Bread & Butter Sweet Chips 907g,USA,907GM*12PCS,BOX,Spreads & Condiments,Pickles & Olives,American Garden,horeca
+187,5 Star Creamy Peanut Butter 500g,India,500GM*12PCS,BOX,Spreads & Condiments,Nut Butters,5 Star,
+188,American Garden Peanut Butter 794g Creamy,USA,794GM*12PCS,BOX,Spreads & Condiments,Nut Butters,American Garden,
+189,Goody Creamy Peanut Butter 1kg,South Africa,1000GM*12PCS,BOX,Spreads & Condiments,Nut Butters,Goody,
+190,Al Kanater Plain Halawa 800g,Lebanon,800GM*05PCS,BOX,Spreads & Condiments,Halawa & Tahina,Al Kanater,
+191,Al Noor Halawa Plain 800g,Jordan,800GM*05PCS,BOX,Spreads & Condiments,Halawa & Tahina,Al Noor,
+192,Nescafe Red Mug 190g,Spain,190GM*6PCS,BOX,Tea & Coffee,Instant Coffee,Nescafe,
+193,Nescafe Classic Coffee 190g,Spain,190GM*6PCS,BOX,Tea & Coffee,Instant Coffee,Nescafe,
+194,Cafe Najjar Classic 200g,Lebanon,200GM*10PCS,PCS,Tea & Coffee,Ground Coffee,Cafe Najjar,
+195,Cafe Najjar Classic With Ground Cardamom 200g,Lebanon,200GM*10PCS,PCS,Tea & Coffee,Ground Coffee,Cafe Najjar,
+196,Nescafe Dolce Gusto Espresso 16 Capsules,United Kingdom,16 CAPS*1PCS,PCS,Tea & Coffee,Coffee Capsules,Nescafe,
+197,Nescafe Dolce Gusto Americano 16 Capsules,United Kingdom,16 CAPS*1PCS,PCS,Tea & Coffee,Coffee Capsules,Nescafe,
+198,Nescafe Dolce Gusto Cappuccino 16 Capsules,United Kingdom,16 CAPS*1PCS,PCS,Tea & Coffee,Coffee Capsules,Nescafe,
+199,Roasted Coffee Bean 1kg Medium,Brazil,1000GM*10PCS,PCS,Tea & Coffee,Coffee Beans,ARCO Coffee,horeca
+200,Roasted Coffee Bean 1kg Dark to Medium,Brazil,1000GM*10PCS,PCS,Tea & Coffee,Coffee Beans,ARCO Coffee,horeca
+201,Speciality Coffee Bean 1kg,Brazil,1000GM*10PCS,PCS,Tea & Coffee,Coffee Beans,ARCO Coffee,horeca
+202,Cafe Vero Arabica Extra 1kg Black,Italy,1000GM*10PCS,PCS,Tea & Coffee,Coffee Beans,Cafe Vero,horeca
+203,Cafe Vero Arabica Extra 1kg Red,Italy,1000GM*10PCS,PCS,Tea & Coffee,Coffee Beans,Cafe Vero,horeca
+204,Cafe Vero Arabica Extra 1kg Green,Italy,1000GM*10PCS,PCS,Tea & Coffee,Coffee Beans,Cafe Vero,horeca
+205,Cafe Vero Classic 1kg Green,Italy,1000GM*10PCS,PCS,Tea & Coffee,Coffee Beans,Cafe Vero,horeca
+206,Al-Ajaweed Arabic Coffee 350g,Brazil,350GM*5PCS,PCS,Tea & Coffee,Arabic Coffee,Al-Ajaweed,
+207,Al-Ajaweed Arabic Coffee 200g,Brazil,250GM*5PCS,PCS,Tea & Coffee,Arabic Coffee,Al-Ajaweed,
+208,American Garden US Mayonnaise 887ml,USA,887ML*12PCS,BOX,Spreads & Condiments,Mayonnaise,American Garden,
+209,American Garden US Mayonnaise 3.78kg,USA,3.78KG*4PCS,PCS,Spreads & Condiments,Mayonnaise,American Garden,horeca
+210,Chef Pride Mayonnaise HD 3.78kg,Oman,3.78KG*4PCS,PCS,Spreads & Condiments,Mayonnaise,Chef Pride,horeca
+211,Al Kanater Tahina 800g,Lebanon,800GM*12PCS,PCS,Spreads & Condiments,Halawa & Tahina,Al Kanater,
+212,Vinyl Gloves Medium 100pcs,China,100PCS*1BOX,BOX,Disposables & Non-Food,Gloves,Al Bayader,horeca
+213,Garbage Bags Wavetop XL 60 Gallons,China,XL*20PCS,OTR,Disposables & Non-Food,Bags & Liners,Carrefour,horeca
+214,Paper Cup 7oz With & Without Handle,China,7oz*1000pcs,BOX,Disposables & Non-Food,Cups & Tableware,ARCO Food Service,horeca
