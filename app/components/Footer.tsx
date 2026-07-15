@@ -85,6 +85,14 @@ export default function Footer() {
           <p className="text-xs text-crema-dim">
             © {new Date().getFullYear()} {company.name} All rights reserved.
           </p>
+          <div className="flex items-center gap-4 text-xs text-crema-dim">
+            <Link href="/privacy" className="transition-colors hover:text-arco-yellow">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="transition-colors hover:text-arco-yellow">
+              Terms of Service
+            </Link>
+          </div>
           <p className="font-display text-xs uppercase tracking-[0.25em] text-crema-dim">
             Sourced · Imported · Stocked · Delivered
           </p>

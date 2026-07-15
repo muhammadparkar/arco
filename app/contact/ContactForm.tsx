@@ -37,7 +37,7 @@ export default function ContactForm({ initialProduct = "" }: { initialProduct?: 
             name="name"
             required
             autoComplete="name"
-            className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
+            className="mt-1 w-full rounded-md border border-arco-ink/15 transition-colors hover:border-arco-ink/30 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
           />
         </div>
         <div>
@@ -48,7 +48,7 @@ export default function ContactForm({ initialProduct = "" }: { initialProduct?: 
             id="company"
             name="company"
             autoComplete="organization"
-            className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
+            className="mt-1 w-full rounded-md border border-arco-ink/15 transition-colors hover:border-arco-ink/30 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
           />
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function ContactForm({ initialProduct = "" }: { initialProduct?: 
             name="phone"
             type="tel"
             autoComplete="tel"
-            className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
+            className="mt-1 w-full rounded-md border border-arco-ink/15 transition-colors hover:border-arco-ink/30 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
           />
         </div>
         <div>
@@ -74,7 +74,7 @@ export default function ContactForm({ initialProduct = "" }: { initialProduct?: 
             id="product"
             name="product"
             defaultValue={initialProduct}
-            className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
+            className="mt-1 w-full rounded-md border border-arco-ink/15 transition-colors hover:border-arco-ink/30 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
           />
         </div>
       </div>
@@ -88,7 +88,7 @@ export default function ContactForm({ initialProduct = "" }: { initialProduct?: 
           name="message"
           rows={5}
           required
-          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
+          className="mt-1 w-full rounded-md border border-arco-ink/15 transition-colors hover:border-arco-ink/30 px-3 py-2.5 focus:border-arco-green focus:outline-2 focus:outline-arco-green/40"
         />
       </div>
 

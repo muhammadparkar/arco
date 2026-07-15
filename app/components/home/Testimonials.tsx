@@ -26,16 +26,28 @@ export default function Testimonials() {
           </h2>
         </Reveal>
 
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-3 md:grid-rows-2">
           {testimonials.map((t, i) => (
-            <Reveal key={t.name} delay={i * 90}>
-              <figure className="flex h-full flex-col rounded-2xl border border-arco-ink/10 bg-white/60 p-7 shadow-[0_18px_40px_-30px_rgba(26,43,33,0.5)]">
+            <Reveal
+              key={t.name}
+              delay={i * 90}
+              className={i === 0 ? "md:col-span-2 md:row-span-2" : "md:col-start-3"}
+            >
+              <figure
+                className={`flex h-full flex-col rounded-2xl border border-arco-ink/10 bg-white/60 shadow-[0_18px_40px_-30px_rgba(26,43,33,0.5)] ${
+                  i === 0 ? "p-9" : "p-6"
+                }`}
+              >
                 <Stars />
-                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-arco-ink">
+                <blockquote
+                  className={`mt-4 flex-1 leading-relaxed text-arco-ink ${
+                    i === 0 ? "text-lg" : "text-sm"
+                  }`}
+                >
                   “{t.quote}”
                 </blockquote>
                 <figcaption className="mt-6 flex items-center gap-3 border-t border-arco-ink/10 pt-5">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-arco-green font-display text-sm font-bold text-arco-cream ring-1 ring-arco-red/40">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-arco-green font-display text-sm font-bold text-arco-cream ring-1 ring-arco-red/40">
                     {t.initials}
                   </span>
                   <div>
