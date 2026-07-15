@@ -1,135 +1,184 @@
-"use client";
-
-import { useState } from "react";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import Reveal from "../Reveal";
-import ProductVisual from "../ProductVisual";
-import { categories, products } from "../../data/products";
+import { Icon, icons } from "../Icon";
 
-const FILTERS = ["All", ...categories] as const;
-const PREVIEW = 9; // home page teases a slice — full catalogue lives on /products
+const spiceGroups = [
+  { title: "Ground Spices", items: "Curry powder, chilli powder, turmeric powder, black pepper, white pepper, coriander powder, cumin powder" },
+  { title: "Whole Spices", items: "Fennel seeds, fenugreek, mustard seeds, cinnamon sticks & powder, cardamom, cloves, bay leaves" },
+  { title: "Masala Blends", items: "Mixed masala, garam masala, chicken masala, meat masala, fish masala, biriyani masala, custom blends" },
+];
+
+const fmcgGroups = [
+  { title: "Grocery & Dry Foods", items: "Rice varieties, flour & bakery ingredients, sugar & salt, pulses & lentils, beans & grains, pasta & noodles" },
+  { title: "Cooking Essentials", items: "Sunflower oil, vegetable oil, ghee, sauces, mayonnaise, ketchup, vinegar, pickles, ready-to-cook products" },
+  { title: "Beverages", items: "Ceylon tea, green tea, coffee, juices, soft drinks, drinking water" },
+  { title: "Snacks & Confectionery", items: "Biscuits, chocolates, sweets, snacks, nuts & dry fruits" },
+  { title: "Frozen & Chilled Products", items: "Frozen foods, dairy products, meat & poultry products, seafood products" },
+];
+
+const horecaGroups = [
+  { title: "Hotels", items: "Kitchen ingredients, buffet items, beverage supplies, guest service products" },
+  { title: "Restaurants & Cafés", items: "Bulk food ingredients, spices & seasonings, sauces & condiments, beverage solutions, daily kitchen requirements" },
+  { title: "Catering Companies", items: "Large quantity food supplies, event catering requirements, customized supply solutions" },
+  { title: "Hospitality Essentials", items: "Disposable packaging, food containers, cleaning products, hygiene supplies, kitchen consumables" },
+];
+
+const whyChoose = [
+  "Quality Products",
+  "Reliable Supply Chain",
+  "Competitive Pricing",
+  "Professional Service",
+  "Timely Delivery",
+  "Long-Term Business Partnerships",
+];
+
+const pillars = [
+  {
+    key: "spice",
+    accent: "bg-arco-green",
+    iconBg: "bg-arco-green/10 text-arco-green",
+    title: "Spice & Seasoning",
+    blurb: "Authentic flavors and consistent quality for kitchens and food businesses.",
+    icon: icons.leaf,
+    groupAccent: "text-arco-green",
+    groups: spiceGroups,
+  },
+  {
+    key: "fmcg",
+    accent: "bg-arco-red",
+    iconBg: "bg-arco-red/10 text-arco-red",
+    title: "FMCG Product Range",
+    blurb: "Essential fast-moving consumer goods for retail and food service.",
+    icon: icons.bag,
+    groupAccent: "text-arco-red",
+    groups: fmcgGroups,
+  },
+  {
+    key: "horeca",
+    accent: "bg-arco-yellow",
+    iconBg: "bg-arco-yellow/20 text-arco-ink",
+    title: "HORECA Supply Solutions",
+    blurb: "Complete supply solutions for hospitality and food service businesses.",
+    icon: icons.bell,
+    groupAccent: "text-arco-ink",
+    groups: horecaGroups,
+  },
+];
+
+function PillarCard({
+  accent,
+  iconBg,
+  title,
+  blurb,
+  icon,
+  groupAccent,
+  groups,
+}: {
+  accent: string;
+  iconBg: string;
+  title: string;
+  blurb: string;
+  icon: ReactNode;
+  groupAccent: string;
+  groups: { title: string; items: string }[];
+}) {
+  return (
+    <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-arco-ink/10 bg-white shadow-[0_18px_40px_-30px_rgba(26,43,33,0.5)] transition-transform duration-300 hover:-translate-y-1">
+      <span className={`block h-1.5 w-full ${accent}`} aria-hidden="true" />
+      <div className="flex flex-1 flex-col p-6">
+        <div className="flex items-center gap-3">
+          <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${iconBg}`}>
+            <Icon path={icon} className="h-6 w-6" />
+          </span>
+          <h3 className="font-display text-lg font-bold uppercase leading-tight tracking-wide text-arco-ink">
+            {title}
+          </h3>
+        </div>
+        <p className="mt-3 text-sm text-slate-600">{blurb}</p>
+        <div className="mt-5 space-y-3.5 border-t border-arco-ink/10 pt-4">
+          {groups.map((g) => (
+            <div key={g.title}>
+              <p className={`text-xs font-bold uppercase tracking-wide ${groupAccent}`}>
+                {g.title}
+              </p>
+              <p className="mt-0.5 text-sm leading-relaxed text-slate-600">{g.items}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Range() {
-  const [filter, setFilter] = useState<(typeof FILTERS)[number]>("All");
-  const matched = products.filter(
-    (p) => filter === "All" || p.category === filter,
-  );
-  const list = matched.slice(0, PREVIEW);
-  const hasMore = matched.length > PREVIEW;
-
   return (
     <section id="range" className="scroll-mt-24 bg-arco-cream py-20 text-arco-ink sm:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <Reveal className="max-w-2xl">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <p className="font-display text-xs uppercase tracking-[0.3em] text-arco-red">
             01 — The range
           </p>
           <h2 className="mt-3 font-display text-4xl font-bold uppercase tracking-wide text-arco-ink sm:text-5xl">
-            High-rotation lines, one order
+            Complete Spice, FMCG &amp; HORECA Supply
           </h2>
-          <p className="mt-4 text-ink-dim">
-            Indicative retail pricing shown. Filter by category to build your
-            first order — trade pricing on request.
+          <p className="mt-4 leading-relaxed text-ink-dim">
+            Under the heritage of NBI Holding (established 1987), ARCO
+            provides a wide range of quality food products and hospitality
+            solutions across Qatar. With a strong focus on Spices, FMCG and
+            HORECA supplies, we serve hotels, restaurants, cafés, catering
+            companies, supermarkets, wholesalers and food service operators
+            with reliable products, competitive pricing and professional
+            distribution.
           </p>
         </Reveal>
 
-        {/* category filter tabs */}
-        <div className="mt-8 flex flex-wrap gap-2" role="tablist" aria-label="Filter by category">
-          {FILTERS.map((f) => (
-            <button
-              key={f}
-              type="button"
-              role="tab"
-              aria-selected={filter === f}
-              onClick={() => setFilter(f)}
-              className={`cursor-pointer rounded-lg border px-4 py-2 font-display text-sm font-medium uppercase tracking-wide transition-colors ${
-                filter === f
-                  ? "border-arco-red bg-arco-red text-arco-cream"
-                  : "border-arco-ink/15 text-ink-dim hover:border-arco-ink/40 hover:text-arco-ink"
-              }`}
-            >
-              {f}
-            </button>
-          ))}
-        </div>
-
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {list.map((p, i) => (
-            <Reveal key={p.slug} delay={(i % 3) * 60}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-arco-ink/10 bg-white/70 shadow-[0_18px_40px_-30px_rgba(26,43,33,0.5)] transition-all duration-300 hover:-translate-y-1 hover:border-arco-red/50 hover:shadow-red-glow">
-                <Link
-                  href={`/products/${p.slug}`}
-                  className="relative block aspect-[5/3] cursor-pointer overflow-hidden"
-                  aria-label={`${p.brand} ${p.name} — details`}
-                >
-                  <ProductVisual
-                    product={p}
-                    className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <span className="absolute right-3 top-3 rounded-md bg-arco-cream/90 px-2.5 py-1 text-xs font-medium uppercase tracking-wide text-arco-red backdrop-blur-sm">
-                    {p.category}
-                  </span>
-                </Link>
-                <div className="flex flex-1 flex-col p-6">
-                  <h3 className="font-display text-xl font-bold uppercase tracking-wide text-arco-ink">
-                    {p.name}
-                  </h3>
-                  <p className="mt-1 text-sm text-arco-red">{p.brand}</p>
-
-                  <div className="mt-4 flex flex-wrap gap-1.5">
-                    {p.tags.map((t) => (
-                      <span
-                        key={t}
-                        className="rounded-md border border-arco-ink/10 bg-arco-cream px-2.5 py-1 text-xs text-ink-dim"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="mt-5 flex items-center justify-between border-t border-arco-ink/10 pt-4 text-xs text-ink-dim">
-                    <span>{p.origin}</span>
-                    <span>per {p.unit}</span>
-                  </div>
-
-                  <div className="mt-5 flex items-center justify-between gap-3">
-                    <span className="font-display text-lg font-bold leading-tight text-arco-red">
-                      {p.packing}
-                    </span>
-                    <a
-                      href="#quote"
-                      className="inline-flex h-10 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg bg-arco-cream px-4 text-xs font-bold uppercase tracking-wide text-arco-ink ring-1 ring-arco-ink/15 transition-colors hover:bg-arco-red hover:text-arco-cream hover:ring-arco-red"
-                    >
-                      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                        <path d="M6 6h15l-1.5 9h-12zM6 6L5 3H3M9 20a1 1 0 1 0 0-.01M18 20a1 1 0 1 0 0-.01" />
-                      </svg>
-                      Add to order
-                    </a>
-                  </div>
-                </div>
-              </article>
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          {pillars.map((p, i) => (
+            <Reveal key={p.key} delay={i * 80} className="h-full">
+              <PillarCard {...p} />
             </Reveal>
           ))}
         </div>
 
-        {hasMore && (
-          <div className="mt-10 text-center">
-            <Link
-              href={
-                filter === "All"
-                  ? "/products"
-                  : `/products?category=${encodeURIComponent(filter)}`
-              }
-              className="inline-flex h-12 items-center gap-2 rounded-lg border border-arco-ink/20 px-6 font-display text-sm font-bold uppercase tracking-wide text-arco-ink transition-colors hover:border-arco-red hover:bg-arco-red hover:text-arco-cream"
-            >
-              View all {matched.length}
-              {filter === "All" ? " products" : ` in ${filter}`}
-              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                <path d="M13 6l6 6-6 6M5 12h14" />
-              </svg>
-            </Link>
-          </div>
-        )}
+        {/* why choose ARCO */}
+        <Reveal>
+          <section className="mt-14 overflow-hidden rounded-2xl bg-forest px-8 py-12 text-white sm:px-12">
+            <h3 className="font-display text-2xl font-bold uppercase tracking-wide sm:text-3xl">
+              Why Choose ARCO Trading &amp; Marketing?
+            </h3>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {whyChoose.map((w) => (
+                <li key={w} className="flex items-center gap-2.5 text-sm font-semibold text-crema">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-arco-yellow/20 text-arco-yellow">
+                    <Icon path={icons.check} className="h-3.5 w-3.5" />
+                  </span>
+                  {w}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-8 max-w-2xl text-sm leading-relaxed text-crema/80">
+              Backed by the trusted legacy of NBI Holding since 1987, we
+              continue to deliver quality, reliability and excellence to
+              Qatar&apos;s growing food and hospitality industry.
+            </p>
+            <p className="mt-6 font-display text-xs uppercase tracking-[0.3em] text-arco-yellow">
+              Quality · Trust · Excellence
+            </p>
+          </section>
+        </Reveal>
+
+        <div className="mt-10 text-center">
+          <Link
+            href="/products"
+            className="inline-flex h-12 items-center gap-2 rounded-lg border border-arco-ink/20 px-6 font-display text-sm font-bold uppercase tracking-wide text-arco-ink transition-colors hover:border-arco-red hover:bg-arco-red hover:text-arco-cream"
+          >
+            Browse the full catalogue
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <path d="M13 6l6 6-6 6M5 12h14" />
+            </svg>
+          </Link>
+        </div>
       </div>
     </section>
   );

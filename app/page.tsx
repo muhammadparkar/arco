@@ -10,7 +10,6 @@ import Story from "./components/home/Story";
 import Services from "./components/home/Services";
 import Process from "./components/home/Process";
 import CtaBand from "./components/home/CtaBand";
-import Testimonials from "./components/home/Testimonials";
 import Faq from "./components/home/Faq";
 import Quote from "./components/home/Quote";
 
@@ -29,7 +28,6 @@ export default function Home() {
       <Services />
       <Process />
       <CtaBand />
-      <Testimonials />
       <Faq />
       <Quote />
     </>

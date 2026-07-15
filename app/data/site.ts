@@ -19,6 +19,7 @@ export const company = {
 export type NavLink = { label: string; href: string };
 
 export const navLinks: NavLink[] = [
+  { label: "About", href: "/about" },
   { label: "Products", href: "/products" },
   { label: "Brands", href: "/brands" },
   { label: "Markets", href: "/markets" },
@@ -265,37 +266,6 @@ export const partnerCta = {
   title: "Put ARCO on your shelf",
   copy: "Wholesale pricing, reliable cold-chain logistics and a dedicated account manager — or full market entry for brands new to Qatar.",
 };
-
-export type Testimonial = {
-  quote: string;
-  name: string;
-  role: string;
-  initials: string;
-};
-
-export const testimonials: Testimonial[] = [
-  {
-    quote:
-      "ARCO turned three suppliers into one. Cereals, chocolate and crisps arrive on the same truck, next morning, every time.",
-    name: "Yousef Al-Marri",
-    role: "Purchasing Manager · Doha supermarket group",
-    initials: "YM",
-  },
-  {
-    quote:
-      "The chilled deliveries never miss. Laban and milk hit our cafeterias before 7am — temperature logged, no shortages during peak season.",
-    name: "Priya Nair",
-    role: "F&B Procurement · Hotel West Bay",
-    initials: "PN",
-  },
-  {
-    quote:
-      "As a small grocery, we get the same trade terms and the same account manager as the big chains. The merchandising support moves product.",
-    name: "Hassan Karim",
-    role: "Owner · Al Sadd Grocery",
-    initials: "HK",
-  },
-];
 
 export const faqs = [
   {

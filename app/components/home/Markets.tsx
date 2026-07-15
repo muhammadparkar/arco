@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Reveal from "../Reveal";
-import { markets } from "../../data/site";
-import { photos } from "../../data/photos";
+import MarketsMapLoader from "./MarketsMapLoader";
 
 export default function Markets() {
   return (
@@ -26,36 +24,9 @@ export default function Markets() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2">
-          {markets.map((m, i) => (
-            <Reveal key={m.country} delay={i * 80}>
-              <article className="group relative flex h-56 overflow-hidden rounded-2xl border border-white/10">
-                <Image
-                  src={photos[m.photo as keyof typeof photos]}
-                  alt=""
-                  fill
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest via-forest/60 to-forest/20" />
-                <div className="relative mt-auto w-full p-6">
-                  <div className="flex items-baseline justify-between gap-2">
-                    <h3 className="font-display text-2xl font-bold uppercase tracking-wide text-crema">
-                      {m.country}
-                    </h3>
-                    <span className="text-xs uppercase tracking-wide text-arco-yellow">
-                      {m.lines}
-                    </span>
-                  </div>
-                  <p className="text-sm text-arco-red-bright">{m.region}</p>
-                  <p className="mt-2 max-h-0 overflow-hidden text-sm text-crema-dim opacity-0 transition-all duration-300 group-hover:max-h-24 group-hover:opacity-100 motion-reduce:max-h-24 motion-reduce:opacity-100">
-                    {m.note}
-                  </p>
-                </div>
-              </article>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal className="mt-12">
+          <MarketsMapLoader />
+        </Reveal>
       </div>
     </section>
   );
