@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           {/* brand */}
           <div>
-            <Brand height={46} />
+            <Brand height={64} />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-crema-dim">
               {company.tagline}
             </p>

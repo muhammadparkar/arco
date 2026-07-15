@@ -38,7 +38,7 @@ export default function Navbar() {
           aria-label="ARCO Trading & Marketing — home"
           onClick={() => setOpen(false)}
         >
-          <Brand height={34} />
+          <Brand height={44} />
         </Link>
 
         {/* desktop links */}
