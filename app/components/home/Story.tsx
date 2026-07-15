@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Reveal from "../Reveal";
-import Logo from "../Logo";
 import { story } from "../../data/site";
 import { photos } from "../../data/photos";
 
@@ -22,10 +21,6 @@ export default function Story() {
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/20 to-transparent" />
-              <Logo
-                className="relative h-20 w-auto drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)] sm:h-24"
-                color="#ffffff"
-              />
             </div>
           </div>
         </Reveal>
