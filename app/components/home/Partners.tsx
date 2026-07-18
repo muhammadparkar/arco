@@ -30,6 +30,7 @@ function Chip({ slug }: { slug: string }) {
         width={110}
         height={44}
         className="h-auto max-h-11 w-auto max-w-full object-contain"
+        style={{ width: "auto", height: "auto" }}
       />
     </div>
   );

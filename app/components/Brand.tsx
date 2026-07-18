@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 /**
- * ARCO red badge logo (green border, white wordmark) on a transparent
- * background. Works on any surface — the badge carries its own colour.
+ * ARCO wordmark — backlit-sign render on its own metallic backdrop panel
+ * (not a transparent lockup). Renders as a self-contained rectangle image.
  */
 export default function Brand({
   className = "",
@@ -11,8 +11,8 @@ export default function Brand({
   className?: string;
   height?: number;
 }) {
-  // Exact source image is 1536×1024.
-  const width = Math.round(height * (1536 / 1024));
+  // Tight-cropped sign panel is 790×300.
+  const width = Math.round(height * (790 / 300));
   return (
     <Image
       src="/arco-badge.png"
@@ -21,7 +21,6 @@ export default function Brand({
       height={height}
       priority
       className={className}
-      style={{ height, width: "auto" }}
     />
   );
 }

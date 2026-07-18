@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
       <nav
-        className={`mx-auto flex max-w-6xl items-center justify-between rounded-2xl border px-4 py-2.5 transition-all duration-300 sm:px-6 ${
+        className={`mx-auto flex max-w-6xl items-center justify-between rounded-2xl border px-4 py-2 transition-all duration-300 sm:px-6 ${
           frosted
             ? "border-white/10 bg-forest/85 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.9)] backdrop-blur-xl"
             : "border-transparent bg-transparent"
@@ -38,7 +38,7 @@ export default function Navbar() {
           aria-label="ARCO Trading & Marketing — home"
           onClick={() => setOpen(false)}
         >
-          <Brand height={44} />
+          <Brand height={32} />
         </Link>
 
         {/* desktop links */}
