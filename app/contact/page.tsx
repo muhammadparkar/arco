@@ -43,10 +43,10 @@ export default async function ContactPage({
             <ul className="mt-3 space-y-2 text-sm">
               <li>
                 <a
-                  href="tel:+97474740076"
+                  href="tel:+97455669309"
                   className="font-semibold text-arco-green transition-colors duration-200 hover:text-arco-green-dark"
                 >
-                  +974 7474 0076 / 3040 4668
+                  +974 5566 9309 / 3040 4668
                 </a>
               </li>
               <li>

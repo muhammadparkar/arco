@@ -44,6 +44,23 @@
   --animate-float: float 7s ease-in-out infinite;
 }
 
+@keyframes scale-pulse {
+  0%, 100% {
+    transform: scale(0.92);
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.15));
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 32px rgba(255, 215, 0, 0.45));
+    opacity: 1;
+  }
+}
+
+.logo-pulse {
+  animation: scale-pulse 2s ease-in-out infinite;
+}
+
 @keyframes marquee {
   to {
     transform: translateX(-50%);

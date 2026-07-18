@@ -113,7 +113,7 @@ export default async function ProductPage({
               Request Wholesale Quote
             </Link>
             <a
-              href="tel:+97474740076"
+              href="tel:+97455669309"
               className="rounded-md border-2 border-arco-green px-6 py-3 font-bold text-arco-green transition-colors duration-200 hover:bg-arco-green hover:text-white"
             >
               Call Sales
