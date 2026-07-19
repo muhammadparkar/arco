@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Brand from "./Brand";
-import { navLinks } from "../data/site";
+import { navLinks, company } from "../data/site";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -59,30 +59,45 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <Link
-            href="/contact"
-            className="ml-2 inline-flex h-11 items-center rounded-lg bg-arco-yellow px-5 font-display text-sm font-bold uppercase tracking-wide text-forest transition-colors hover:bg-arco-yellow-bright"
+          <a
+            href={`tel:${company.phone.replace(/\s/g, "")}`}
+            className="ml-2 inline-flex items-center gap-2 font-display text-sm font-bold uppercase tracking-wide text-arco-yellow transition-colors hover:text-arco-yellow-bright"
           >
-            Request Quote
-          </Link>
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            {company.phone}
+          </a>
         </div>
 
-        {/* mobile toggle */}
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-          className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-lg text-crema md:hidden"
-        >
-          <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round">
-            {open ? (
-              <path d="M6 6 L18 18 M18 6 L6 18" />
-            ) : (
-              <path d="M4 7 H20 M4 12 H20 M4 17 H20" />
-            )}
-          </svg>
-        </button>
+        {/* mobile: call link + menu toggle */}
+        <div className="flex items-center gap-1 md:hidden">
+          <a
+            href={`tel:${company.phone.replace(/\s/g, "")}`}
+            aria-label={`Call ${company.phone}`}
+            className="flex items-center gap-1 rounded-lg px-1.5 py-2 font-display text-[11px] font-bold uppercase tracking-wide text-arco-yellow whitespace-nowrap"
+          >
+            <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            <span>{company.phone}</span>
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-lg text-crema"
+          >
+            <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round">
+              {open ? (
+                <path d="M6 6 L18 18 M18 6 L6 18" />
+              ) : (
+                <path d="M4 7 H20 M4 12 H20 M4 17 H20" />
+              )}
+            </svg>
+          </button>
+        </div>
       </nav>
 
       {/* mobile drawer */}
@@ -98,13 +113,13 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
+          <a
+            href={`tel:${company.phone.replace(/\s/g, "")}`}
             onClick={() => setOpen(false)}
             className="mt-1 block rounded-lg bg-arco-yellow px-4 py-3 text-center font-display text-base font-bold uppercase tracking-wide text-forest"
           >
-            Request Quote
-          </Link>
+            {company.phone}
+          </a>
         </div>
       )}
     </header>

@@ -475,7 +475,8 @@ export const products: Product[] = [
     "description": "Panko Bread Crumbs 10kg — Malaysia. Supplied 10 BAG per BAG. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/panko-bread-crumbs-10kg.png"
   },
   {
     "slug": "tempura-flour-1kg",
@@ -489,7 +490,8 @@ export const products: Product[] = [
     "description": "Tempura Flour 1kg — Malaysia. Supplied 1 KG per PKT. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/tempura-flour-1kg.png"
   },
   {
     "slug": "panko-bread-crumbs-1kg",
@@ -501,7 +503,8 @@ export const products: Product[] = [
     "packing": "1 KG",
     "unit": "PKT",
     "description": "Panko Bread Crumbs 1kg — Malaysia. Supplied 1 KG per PKT. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/panko-bread-crumbs-1kg.png"
   },
   {
     "slug": "white-sugar-stick-5g",
@@ -515,7 +518,8 @@ export const products: Product[] = [
     "description": "White Sugar Stick 5g — UAE. Supplied 1000 PCS per BOX. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/white-sugar-stick-5g.png"
   },
   {
     "slug": "brown-sugar-stick-5g",
@@ -529,7 +533,8 @@ export const products: Product[] = [
     "description": "Brown Sugar Stick 5g — UAE. Supplied 1000 PCS per BOX. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/brown-sugar-stick-5g.png"
   },
   {
     "slug": "white-sugar-sachet-5g",
@@ -543,7 +548,8 @@ export const products: Product[] = [
     "description": "White Sugar Sachet 5g — UAE. Supplied 1000 PCS per BTL. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/white-sugar-sachet-5g.png"
   },
   {
     "slug": "brown-sugar-sachet-5g",
@@ -557,7 +563,8 @@ export const products: Product[] = [
     "description": "Brown Sugar Sachet 5g — UAE. Supplied 1000 PCS per BTL. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/brown-sugar-sachet-5g.png"
   },
   {
     "slug": "sweet-n-low-100pcs",
@@ -569,7 +576,8 @@ export const products: Product[] = [
     "packing": "12x100PCS",
     "unit": "BOX",
     "description": "Sweet'N Low 100pcs — USA. Supplied 12x100PCS per BOX. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/sweet-n-low-100pcs.png"
   },
   {
     "slug": "sugar-2kg",
@@ -581,7 +589,8 @@ export const products: Product[] = [
     "packing": "1KGx10PCS",
     "unit": "BOX",
     "description": "Sugar 2kg — India. Supplied 1KGx10PCS per BOX. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/sugar-2kg.png"
   },
   {
     "slug": "sugar-50kg",
@@ -595,7 +604,8 @@ export const products: Product[] = [
     "description": "Sugar 50kg — India. Supplied 50KG per BOX. Trade pricing and availability on request.",
     "tags": [
       "bulk"
-    ]
+    ],
+    "image": "/products/sugar-50kg.png"
   },
   {
     "slug": "sis-sugar-white-1kg",
@@ -609,7 +619,8 @@ export const products: Product[] = [
     "description": "SIS Sugar White 1kg — Australia. Supplied 1KG per PKT. Trade pricing and availability on request.",
     "tags": [
       "retail"
-    ]
+    ],
+    "image": "/products/sis-sugar-white-1kg.png"
   },
   {
     "slug": "sis-sugar-brown-1kg",
@@ -623,7 +634,8 @@ export const products: Product[] = [
     "description": "SIS Sugar Brown 1kg — Australia. Supplied 1KG per PKT. Trade pricing and availability on request.",
     "tags": [
       "retail"
-    ]
+    ],
+    "image": "/products/sis-sugar-brown-1kg.png"
   },
   {
     "slug": "shortening-clear-oil",
@@ -637,7 +649,8 @@ export const products: Product[] = [
     "description": "Shortening Clear Oil — Qatar. Supplied 18LTR per CTN. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/shortening-clear-oil.png"
   },
   {
     "slug": "sunflower-oil",
@@ -651,7 +664,8 @@ export const products: Product[] = [
     "description": "Sunflower Oil — Qatar. Supplied 5LTR*4 per CTN. Trade pricing and availability on request.",
     "tags": [
       "local"
-    ]
+    ],
+    "image": "/products/sunflower-oil.png"
   },
   {
     "slug": "corn-oil",
@@ -665,7 +679,8 @@ export const products: Product[] = [
     "description": "Corn Oil — Qatar. Supplied 5LTR*4 per CTN. Trade pricing and availability on request.",
     "tags": [
       "local"
-    ]
+    ],
+    "image": "/products/corn-oil.png"
   },
   {
     "slug": "vegetable-oil",
@@ -691,7 +706,8 @@ export const products: Product[] = [
     "packing": "6 x 1 LITTER",
     "unit": "BTL",
     "description": "Canada Maple Syrup — Canada. Supplied 6 x 1 LITTER per BTL. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/canada-maple-syrup.png"
   },
   {
     "slug": "canada-organic-maple-syrup",
@@ -703,7 +719,8 @@ export const products: Product[] = [
     "packing": "6 x 1 LITTER",
     "unit": "BTL",
     "description": "Canada Organic Maple Syrup — Canada. Supplied 6 x 1 LITTER per BTL. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/canada-organic-maple-syrup.png"
   },
   {
     "slug": "organic-green-matcha-tea-100g",
@@ -715,7 +732,8 @@ export const products: Product[] = [
     "packing": "100GM",
     "unit": "PKT",
     "description": "Organic Green Matcha Tea 100g — LiveSmart. Supplied 100GM per PKT. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/organic-green-matcha-tea-100g.png"
   },
   {
     "slug": "organic-blue-matcha-tea-100g",
@@ -727,7 +745,8 @@ export const products: Product[] = [
     "packing": "100GM",
     "unit": "PKT",
     "description": "Organic Blue Matcha Tea 100g — LiveSmart. Supplied 100GM per PKT. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/organic-blue-matcha-tea-100g.png"
   },
   {
     "slug": "organic-mango-matcha-tea-100g",
@@ -751,7 +770,8 @@ export const products: Product[] = [
     "packing": "300GM",
     "unit": "PKT",
     "description": "Udon Wheat Noodles 300g — Japan. Supplied 300GM per PKT. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/udon-wheat-noodles-300g.png"
   },
   {
     "slug": "esoro-red-quinoa-1kg",
@@ -763,7 +783,8 @@ export const products: Product[] = [
     "packing": "1000GM",
     "unit": "PKT",
     "description": "Esoro Red Quinoa 1kg — Peru. Supplied 1000GM per PKT. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/esoro-red-quinoa-1kg.png"
   },
   {
     "slug": "esoro-white-quinoa-1kg",
@@ -775,7 +796,8 @@ export const products: Product[] = [
     "packing": "1000GM",
     "unit": "PKT",
     "description": "Esoro White Quinoa 1kg — Peru. Supplied 1000GM per PKT. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/esoro-white-quinoa-1kg.png"
   },
   {
     "slug": "nutella-hazelnut-spread-750g",

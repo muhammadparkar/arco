@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Brand from "./Brand";
+import Image from "next/image";
 
 export default function Loader() {
   const [loading, setLoading] = useState(true);
@@ -37,9 +37,16 @@ export default function Loader() {
         fadeOut ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      {/* Backlit Pulsing Logo */}
-      <div className="relative logo-pulse">
-        <Brand height={110} />
+      {/* Peaks mark — wipes in, then pulses */}
+      <div className="relative logo-pulse logo-wipe-in">
+        <Image
+          src="/arco-peaks.png"
+          alt="ARCO"
+          width={220}
+          height={278}
+          priority
+          className="h-[220px] w-auto sm:h-[260px]"
+        />
       </div>
 
       {/* Brand Motto Subtext */}

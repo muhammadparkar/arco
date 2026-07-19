@@ -4,13 +4,14 @@
 // The CSV is the source of truth. Edit it, re-run this, commit the result.
 // ponytail: CSV is the "database" for a static marketing site — no runtime, no CMS.
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const csvPath = join(root, "data", "catalogue.csv");
 const outPath = join(root, "app", "data", "products.ts");
+const productPhotosDir = join(root, "public", "products");
 
 // Canonical category order — drives the filter UI. Every row must map to one.
 const categories = [
@@ -94,6 +95,7 @@ const products = rows.map((r) => {
   seen.add(slug);
   const tags = r.tags ? r.tags.split(";").map((t) => t.trim()).filter(Boolean) : [];
   const description = `${r.name} — ${r.origin}. Supplied ${r.packing} per ${r.unit}. Trade pricing and availability on request.`;
+  const hasPhoto = existsSync(join(productPhotosDir, `${slug}.png`));
   return {
     slug,
     name: r.name,
@@ -105,6 +107,7 @@ const products = rows.map((r) => {
     unit: r.unit,
     description,
     tags,
+    ...(hasPhoto ? { image: `/products/${slug}.png` } : {}),
   };
 });
 
