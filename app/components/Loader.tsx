@@ -37,26 +37,28 @@ export default function Loader() {
         fadeOut ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      {/* Peaks mark — wipes in, then pulses */}
-      <div className="relative logo-pulse logo-wipe-in">
+      {/* Peaks mark — wipes in, then pulses. Width matches the wordmark below. */}
+      <div className="relative logo-pulse logo-wipe-in w-[150px]">
         <Image
           src="/arco-peaks.png"
           alt="ARCO"
-          width={220}
-          height={278}
+          width={150}
+          height={190}
           priority
-          className="h-[220px] w-auto sm:h-[260px]"
+          className="h-auto w-[150px]"
         />
       </div>
 
-      {/* Brand Motto Subtext */}
-      <div className="mt-8 flex flex-col items-center">
-        <div className="mb-4 h-[2px] w-24 overflow-hidden rounded-full bg-white/10">
-          <div className="h-full w-12 animate-pulse rounded-full bg-arco-yellow" />
-        </div>
-        <span className="font-display text-[9px] uppercase tracking-[0.35em] text-crema/60">
-          Sourced · Imported · Delivered
-        </span>
+      {/* Wordmark badge — same width as the mark, fades in just after */}
+      <div className="mt-3 w-[150px] logo-wipe-in [animation-delay:0.35s] [animation-fill-mode:backwards]">
+        <Image
+          src="/arco-badge.png"
+          alt="ARCO Trading & Marketing"
+          width={150}
+          height={57}
+          priority
+          className="h-auto w-[150px]"
+        />
       </div>
     </div>
   );

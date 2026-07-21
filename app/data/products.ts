@@ -811,7 +811,8 @@ export const products: Product[] = [
     "description": "Nutella Hazelnut Spread 750g — Germany. Supplied 750GM*12 per PCS. Trade pricing and availability on request.",
     "tags": [
       "bestseller"
-    ]
+    ],
+    "image": "/products/nutella-hazelnut-spread-750g.png"
   },
   {
     "slug": "nutella-hazelnut-spread-3kg",
@@ -825,7 +826,8 @@ export const products: Product[] = [
     "description": "Nutella Hazelnut Spread 3kg — Germany. Supplied 3000GM*2 per PCS. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/nutella-hazelnut-spread-3kg.png"
   },
   {
     "slug": "lotus-spread-400g",
@@ -837,7 +839,8 @@ export const products: Product[] = [
     "packing": "400GM*12",
     "unit": "PCS",
     "description": "Lotus Spread 400g — Belgium. Supplied 400GM*12 per PCS. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/lotus-spread-400g.png"
   },
   {
     "slug": "philadelphia-cream-cheese-spread-500g",
@@ -851,7 +854,8 @@ export const products: Product[] = [
     "description": "Philadelphia Cream Cheese Spread 500g — Switzerland. Supplied 500GM*04 per PCS. Trade pricing and availability on request.",
     "tags": [
       "chilled"
-    ]
+    ],
+    "image": "/products/philadelphia-cream-cheese-spread-500g.png"
   },
   {
     "slug": "philadelphia-cream-cheese-spread-1-65kg",
@@ -866,7 +870,8 @@ export const products: Product[] = [
     "tags": [
       "horeca",
       "chilled"
-    ]
+    ],
+    "image": "/products/philadelphia-cream-cheese-spread-1-65kg.png"
   },
   {
     "slug": "baladna-spreadable-cream-cheese-500g",
@@ -895,7 +900,8 @@ export const products: Product[] = [
     "description": "CJ Bibigo Soy Bean Tofu Firm 350g — Japan. Supplied 350GMx5PCS per PCS. Trade pricing and availability on request.",
     "tags": [
       "chilled"
-    ]
+    ],
+    "image": "/products/cj-bibigo-soy-bean-tofu-firm-350g.png"
   },
   {
     "slug": "puck-organic-cream-cheese-spread-jar-500g",
@@ -909,7 +915,8 @@ export const products: Product[] = [
     "description": "Puck Organic Cream Cheese Spread Jar 500g — Germany. Supplied 500GM*02 per PCS. Trade pricing and availability on request.",
     "tags": [
       "chilled"
-    ]
+    ],
+    "image": "/products/puck-organic-cream-cheese-spread-jar-500g.png"
   },
   {
     "slug": "puck-whipped-cream-spray-250g",
@@ -923,7 +930,8 @@ export const products: Product[] = [
     "description": "Puck Whipped Cream Spray 250g — Belgium. Supplied 250GM*12 per PCS. Trade pricing and availability on request.",
     "tags": [
       "chilled"
-    ]
+    ],
+    "image": "/products/puck-whipped-cream-spray-250g.png"
   },
   {
     "slug": "puck-whipping-cream-1l",
@@ -938,7 +946,8 @@ export const products: Product[] = [
     "tags": [
       "horeca",
       "chilled"
-    ]
+    ],
+    "image": "/products/puck-whipping-cream-1l.png"
   },
   {
     "slug": "baladna-fresh-milk-2l",
@@ -983,7 +992,8 @@ export const products: Product[] = [
     "description": "Baladna Long Life Milk 1L — Qatar. Supplied 1LTR*12 per CTN. Trade pricing and availability on request.",
     "tags": [
       "local"
-    ]
+    ],
+    "image": "/products/baladna-long-life-milk-1l.png"
   },
   {
     "slug": "awafi-long-life-milk-1l",
@@ -997,7 +1007,8 @@ export const products: Product[] = [
     "description": "Awafi Long Life Milk 1L — Qatar. Supplied 1LTR*12 per CTN. Trade pricing and availability on request.",
     "tags": [
       "local"
-    ]
+    ],
+    "image": "/products/awafi-long-life-milk-1l.png"
   },
   {
     "slug": "baladna-ll-lactose-milk-1l",
@@ -1011,7 +1022,8 @@ export const products: Product[] = [
     "description": "Baladna LL Lactose Milk 1L — Qatar. Supplied 1LTR*12 per CTN. Trade pricing and availability on request.",
     "tags": [
       "local"
-    ]
+    ],
+    "image": "/products/baladna-ll-lactose-milk-1l.png"
   },
   {
     "slug": "baladna-skimmed-ll-milk-1l",
@@ -1039,7 +1051,8 @@ export const products: Product[] = [
     "description": "Baladna Long Life Cooking Cream 1L — Qatar. Supplied 1LTR*12 per CTN. Trade pricing and availability on request.",
     "tags": [
       "local"
-    ]
+    ],
+    "image": "/products/baladna-long-life-cooking-cream-1l.png"
   },
   {
     "slug": "baladna-long-life-whipping-cream-1l",
@@ -1053,7 +1066,8 @@ export const products: Product[] = [
     "description": "Baladna Long Life Whipping Cream 1L — Qatar. Supplied 1LTR*12 per CTN. Trade pricing and availability on request.",
     "tags": [
       "local"
-    ]
+    ],
+    "image": "/products/baladna-long-life-whipping-cream-1l.png"
   },
   {
     "slug": "baladna-fresh-yoghurt-ff-2kg",
@@ -1068,7 +1082,8 @@ export const products: Product[] = [
     "tags": [
       "local",
       "chilled"
-    ]
+    ],
+    "image": "/products/baladna-fresh-yoghurt-ff-2kg.png"
   },
   {
     "slug": "baladna-fresh-turkish-labneh-2kg",
@@ -1083,7 +1098,8 @@ export const products: Product[] = [
     "tags": [
       "local",
       "chilled"
-    ]
+    ],
+    "image": "/products/baladna-fresh-turkish-labneh-2kg.png"
   },
   {
     "slug": "baladna-yoghurt-greek-style-plain-150g",
@@ -1098,7 +1114,8 @@ export const products: Product[] = [
     "tags": [
       "local",
       "chilled"
-    ]
+    ],
+    "image": "/products/baladna-yoghurt-greek-style-plain-150g.png"
   },
   {
     "slug": "baladna-shredded-mozzarella-cheese-450g",
@@ -1113,7 +1130,8 @@ export const products: Product[] = [
     "tags": [
       "local",
       "chilled"
-    ]
+    ],
+    "image": "/products/baladna-shredded-mozzarella-cheese-450g.png"
   },
   {
     "slug": "baladna-halloumi-cheese-full-fat-200g",
@@ -1128,7 +1146,8 @@ export const products: Product[] = [
     "tags": [
       "local",
       "chilled"
-    ]
+    ],
+    "image": "/products/baladna-halloumi-cheese-full-fat-200g.png"
   },
   {
     "slug": "baladna-ff-feta-cheese-500g",
@@ -1143,7 +1162,8 @@ export const products: Product[] = [
     "tags": [
       "local",
       "chilled"
-    ]
+    ],
+    "image": "/products/baladna-ff-feta-cheese-500g.png"
   },
   {
     "slug": "baladna-fresh-laban-ff-2l",
@@ -1159,7 +1179,8 @@ export const products: Product[] = [
       "local",
       "chilled",
       "bestseller"
-    ]
+    ],
+    "image": "/products/baladna-fresh-laban-ff-2l.png"
   },
   {
     "slug": "san-pellegrino-water-500ml",
@@ -1173,7 +1194,8 @@ export const products: Product[] = [
     "description": "San Pellegrino Water 500ml — Italy. Supplied 500MLx24 per CASE. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/san-pellegrino-water-500ml.png"
   },
   {
     "slug": "san-pellegrino-water-1000ml",
@@ -1187,7 +1209,8 @@ export const products: Product[] = [
     "description": "San Pellegrino Water 1000ml — Italy. Supplied 1000MLx06 per CASE. Trade pricing and availability on request.",
     "tags": [
       "horeca"
-    ]
+    ],
+    "image": "/products/san-pellegrino-water-1000ml.png"
   },
   {
     "slug": "natural-artesian-water-fiji-330ml",
@@ -1211,7 +1234,8 @@ export const products: Product[] = [
     "packing": "4(500MLx6)",
     "unit": "CASE",
     "description": "Natural Artesian Water Fiji 500ml — New Zealand. Supplied 4(500MLx6) per CASE. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/natural-artesian-water-fiji-500ml.png"
   },
   {
     "slug": "mineral-water-natural-highland-500ml",
@@ -1223,7 +1247,8 @@ export const products: Product[] = [
     "packing": "500MLx24",
     "unit": "CASE",
     "description": "Mineral Water Natural - Highland 500ml — England. Supplied 500MLx24 per CASE. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/mineral-water-natural-highland-500ml.png"
   },
   {
     "slug": "mineral-water-carbonated-highland-330ml",
@@ -1235,7 +1260,8 @@ export const products: Product[] = [
     "packing": "330MLx24",
     "unit": "CASE",
     "description": "Mineral Water Carbonated - Highland 330ml — England. Supplied 330MLx24 per CASE. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/mineral-water-carbonated-highland-330ml.png"
   },
   {
     "slug": "rayyan-natural-water-330ml",
@@ -1262,7 +1288,8 @@ export const products: Product[] = [
     "packing": "330ML*24PCS",
     "unit": "CASE",
     "description": "Evian Natural Mineral Water 330ml — France. Supplied 330ML*24PCS per CASE. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/evian-natural-mineral-water-330ml.png"
   },
   {
     "slug": "perrier-water-330ml",
@@ -1274,7 +1301,8 @@ export const products: Product[] = [
     "packing": "330MLx24PCS",
     "unit": "CASE",
     "description": "Perrier Water 330ml — France. Supplied 330MLx24PCS per CASE. Trade pricing and availability on request.",
-    "tags": []
+    "tags": [],
+    "image": "/products/perrier-water-330ml.png"
   },
   {
     "slug": "red-bull-regular-energy-drink-250ml",

@@ -24,6 +24,7 @@
 .DS_Store
 *.pem
 
+# raw source photos (staged here, copied into public/products before commit) 
 # debug
 npm-debug.log*
 yarn-debug.log*
@@ -39,3 +40,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+images 
